@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { Hexagon, Code, Users, Zap, Shield, Database, Layout, Cpu } from 'lucide-react';
 
 const BeeAnimation = () => {
@@ -22,6 +22,8 @@ const BeeAnimation = () => {
   return (
     <div 
       className="fixed z-50 pointer-events-none"
+      onMouseEnter={() => setHovering(true)}
+      onMouseLeave={() => setHovering(false)}
       style={{ 
         left: `${position.x}%`, 
         top: `${position.y}%`, 
